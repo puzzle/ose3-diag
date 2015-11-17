@@ -5,5 +5,3 @@ RUN yum -y install dnsutil curl nmap lsof jq links net-tools telnet iputils shel
 
 EXPOSE 4200
 CMD ["/usr/bin/shellinaboxd, "-s", "/:LOGIN"]
-
-ENTRYPOINT ["/bin/bash"]
