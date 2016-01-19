@@ -7,5 +7,7 @@ RUN echo shellinabox | passwd --stdin root
 
 ADD run.sh /tmp/run.sh
 
+USER 1001
+
 EXPOSE 4200
 CMD "/tmp/run.sh"
