@@ -14,8 +14,11 @@ RUN /usr/sbin/sshd-keygen
 RUN echo shellinabox | passwd --stdin root
 
 ADD run.sh /tmp/run.sh
+ADD libmapuid.so /usr/local/lib/libmapuid.so
 
 USER root
 
 EXPOSE 4200
+
+ENTRYPOINT ["/usr/bin/env", "LD_PRELOAD=/usr/local/lib/libmapuid.so", "/bin/bash"]
 CMD "/tmp/run.sh"
