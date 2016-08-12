@@ -20,5 +20,4 @@ USER root
 
 EXPOSE 4200
 
-ENTRYPOINT ["/usr/bin/env", "LD_PRELOAD=/usr/local/lib/libmapuid.so", "/bin/bash"]
-CMD "/tmp/run.sh"
+CMD ["/usr/bin/env", "LD_PRELOAD=/usr/local/lib/libmapuid.so", "/tmp/run.sh"]
