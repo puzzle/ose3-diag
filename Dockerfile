@@ -5,7 +5,7 @@ RUN env
 
 RUN cat /etc/resolv.conf
 
-RUN curl http://59.60.0.19/
+# RUN curl http://59.60.0.19/
 
 RUN curl http://mirror.switch.ch/
 
