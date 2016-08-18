@@ -5,9 +5,9 @@ RUN env
 
 RUN cat /etc/resolv.conf
 
-RUN curl http://195.141.111.190/
+RUN curl http://50.31.164.145/
 
-RUN curl http://example.org/
+RUN curl http://mirror.switch.ch/
 
 RUN yum -y install openssh-server passwd dnsutil curl nmap lsof jq links bind-utils net-tools telnet iputils shellinabox initscripts; yum clean all
 RUN /usr/sbin/sshd-keygen
