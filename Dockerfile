@@ -16,7 +16,7 @@ RUN echo shellinabox | passwd --stdin root
 ADD run.sh /tmp/run.sh
 ADD libmapuid.so /usr/local/lib/libmapuid.so
 
-USER root
+USER 1001
 
 EXPOSE 4200
 
